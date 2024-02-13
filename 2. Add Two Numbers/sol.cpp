@@ -18,7 +18,7 @@ public:
             break;
           }
           else if(cur->next->next && !l2->next){
-            l2->next = new ListNode(0, NULL);
+            l2->next = new ListNode(0);
           }
           cur->next = cur->next->next;
           l2 = l2->next;
