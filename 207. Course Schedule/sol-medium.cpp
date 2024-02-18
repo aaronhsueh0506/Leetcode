@@ -24,4 +24,4 @@ public:
       visited[i]=1;
       return true;
     }
-}
+};
