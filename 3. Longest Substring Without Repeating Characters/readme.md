@@ -32,3 +32,8 @@ Given a string `s`, find the length of the **longest substring** without repeati
 
 - `0 <= s.length <= 5 * 10^4`
 - `s` consists of English letters, digits, symbols, and spaces.
+
+### Concepts
+1. Set the left border to -1 and update the result every time.
+2. If s[i] appears in the hash table and is greater than left, then update left to m[s[i]].
+3. Update m[s[i]] to be the current index.
