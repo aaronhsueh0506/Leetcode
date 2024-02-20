@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
       int m = mat.size(), n = mat[0].size();
-      vector<vector<int>> DP(m, vector<int>(n));
+      vector<vector<int>> DP(m, vector<int>(n, 10001));
       for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
           if(mat[i][j]==0) DP[i][j]=0;
