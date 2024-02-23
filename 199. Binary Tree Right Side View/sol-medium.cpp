@@ -6,7 +6,7 @@ public:
       return res;
     }
 
-    void traversal(TreeNode* root, vector<int>& res, int levle){
+    void traversal(TreeNode* root, vector<int>& res, int level){
       if(!root) return;
       if(res.size() <= level) res.push_back(root->val);
 
