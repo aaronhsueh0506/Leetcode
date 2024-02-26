@@ -3,11 +3,11 @@ public:
     int pathSum(TreeNode* root, int targetSum) {
         int res = 0;
         vector<TreeNode*> out;
-        traversal(root, targetSum, 0, res, out);
+        DFS(root, targetSum, 0, res, out);
         return res;
     }
 
-    void traversal(TreeNode* root, int targetSum, long cursum, int& res, vector<TreeNode*>& out){
+    void DFS(TreeNode* root, int targetSum, long cursum, int& res, vector<TreeNode*>& out){
       if(!root) return;
       cursum += root->val;
       out.push_back(root);
