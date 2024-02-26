@@ -40,6 +40,9 @@ You must solve the problem **without** modifying the array `nums` and uses only 
 
 ## Concept
 Solution 1: 
+
 Time Complexity  O(nlogn) : Use binary search within the range [1, n]. If there is no duplicate below mid, it means the count of numbers less than mid is n.
+
 Solution 2:
+
 Time Complexity O(n) : Floyd cycle detection
