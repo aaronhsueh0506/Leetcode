@@ -8,21 +8,18 @@ Clarification: The input/output format is the same as how LeetCode serializes bi
 
 #### Example 1:
 ![Example](https://assets.leetcode.com/uploads/2020/09/15/serdeser.jpg)
-> Input: root = [1,2,3,null,null,4,5]
->
-> Output: [1,2,3,null,null,4,5]
->
-> Explanation: The tree looks like the following diagram:
->
-> The serialized string would be something like "1,2,3,null,null,4,5", which includes all values in the tree, including null for missing children.
-
+```plaintext\n
+Input: root = [1,2,3,null,null,4,5]
+Output: [1,2,3,null,null,4,5]
+Explanation: The tree looks like the following diagram:
+The serialized string would be something like "1,2,3,null,null,4,5", which includes all values in the tree, including null for missing children.
+```
 #### Example 2:
-
-> Input: root = []
->
-> Output: []
-> 
-## Constraints:
+```plaintext\n
+Input: root = []
+Output: []
+```
+## Constraints
 
 - The number of nodes in the tree is in the range `[0, 10^4]`.
 - `-1000 <= Node.val <= 1000`
@@ -34,5 +31,5 @@ The solution is required to serialize and deserialize the tree accurately, which
 ## Concept
 1. use istringstream & ostringstream.
 2. out << root->val << ' '; // Serialize by appending root->val followed by a space.
-3. in >> val; // Deserialize by reading values into val.
+3. in >val; // Deserialize by reading values into val.
 4. Use '#' for nullptr.
