@@ -3,17 +3,17 @@
 Given the `root` of a binary search tree, and an integer `k`, return *the `kth` smallest value (**1-indexed**) of all the values of the nodes in the tree*.
 
 #### Example 1:
-> Input: root = [3,1,4,null,2], k = 1
->
-> Output: 1
-
+```plaintext\n
+Input: root = [3,1,4,null,2], k = 1
+Output: 1
+```
 ![Example 1](https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg)
 
 #### Example 2:
-> Input: root = [5,3,6,2,4,null,null,1], k = 3
->
-> Output: 3
-
+```plaintext\n
+Input: root = [5,3,6,2,4,null,null,1], k = 3
+Output: 3
+```
 ![Example 2](https://assets.leetcode.com/uploads/2021/01/28/kthtree2.jpg)
 
 ## Constraints
