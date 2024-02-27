@@ -5,22 +5,20 @@ Given a **non-empty** binary tree, find the maximum path sum.
 For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain **at least one node** and does not need to go through the root.
 
 #### Example 1:
+```plaintext
+Input:[1,2,3]
+Output:6
 
-> Input:[1,2,3]
-> 
-> Output:6
-
-> Explanation:The maximum path sum is `6`.
-
+Explanation:The maximum path sum is `6`.
+```
 #### Example 2:
+```plaintext
+Input:[-10,9,20,null,null,15,7]
+Output:42
 
-> Input:[-10,9,20,null,null,15,7]
-> 
-> Output:42
-
-> Explanation:The maximum path sum is `42`.
-
-## Constraints:
+Explanation:The maximum path sum is `42`.
+```
+## Constraints
 
 - The number of nodes in the tree is in the range `[0, 3 * 10^4]`.
 - `-1000 <= Node.val <= 1000`
