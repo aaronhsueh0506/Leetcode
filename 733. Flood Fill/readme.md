@@ -7,16 +7,18 @@ To perform a flood fill, consider the starting pixel, plus any pixels connected 
 Return the modified image after performing the flood fill.
 
 #### Example 1:
+```plaintext
 Input: image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, newColor = 2
 Output: [[2,2,2],[2,2,0],[2,0,1]]
 Explanation: From the center of the image with position (sr, sc) = (1, 1) (i.e., the pixel where image[1][1] = 1), all pixels connected by the same color as the starting pixel (i.e., the 1s) are colored with the new color.
 Note the bottom corner is not colored 2 because it is not 4-directionally connected to the starting pixel.
-
+```
 #### Example 2:
+```plaintext
 Input: image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, newColor = 0
 Output: [[0,0,0],[0,0,0]]
 Explanation: The starting pixel is already the color newColor. The image remains unchanged.
-
+```
 ## Constraints
 
 - `m == image.length`
