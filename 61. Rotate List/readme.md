@@ -35,3 +35,7 @@ Given the head of a linked list, rotate the list to the right by `k` places, whe
 Rotate the list to the right by `k` places means that the `k` nodes from the end of the list will be moved to the beginning of the list. If `k` is greater than the length of the list, keep rotating the list until you have rotated `k` times.
 
 ## Concept
+1. First, we need to determine the length of the linked list, denoted as n.
+2. The actual number of rotations required is k % n.
+3. Connect the last node to the first node to form a cycle.
+4. Move forward n - (k % n) steps; the next node will be the new starting node, and its next pointer should be set to nullptr.
