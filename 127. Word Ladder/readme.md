@@ -8,22 +8,18 @@ Given two words, *beginWord* and *endWord*, and a dictionary *wordList*, return 
 Return 0 if there is no such transformation sequence.
 
 ### Example 1:
-
-> Input: beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
-> 
-> Output: 5
->
-> Explanation: As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog", return its length 5.
-
+```plaintext
+Input: beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
+Output: 5
+Explanation: As one shortest transformation is "hit" -"hot" -"dot" -"dog" -"cog", return its length 5.
+```
 ### Example 2:
-
-> Input: beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]
-> 
-> Output: 0
->
-> Explanation: The endWord "cog" is not in wordList, therefore no possible transformation.
-
-### Constraints:
+```plaintext
+Input: beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]
+Output: 0
+Explanation: The endWord "cog" is not in wordList, therefore no possible transformation.
+```
+### Constraints
 
 - `1 <= beginWord.length <= 100`
 - `endWord.length == beginWord.length`
