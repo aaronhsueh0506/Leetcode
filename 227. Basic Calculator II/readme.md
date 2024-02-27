@@ -44,5 +44,6 @@ a op1 b op2 c -> 0 + a op1 b op2 c
      - meet c : 0 + a op1 b op2 c
        
    if op, calculate to cur (temp val)
+   
    if op is +,- means previous calculate (cur) is done, can push to res
    
