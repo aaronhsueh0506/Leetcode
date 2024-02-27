@@ -25,4 +25,4 @@ Write an efficient algorithm that searches for a value `target` in an `m x n` ma
 - `-10^4 <= matrix[i][j], target <= 10^4`
 
 ## Concept
-1. Check in which column and find in this column
+1. Check in which row and find in this row
