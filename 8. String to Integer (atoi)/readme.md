@@ -11,30 +11,30 @@ If no valid conversion could be performed, a zero value is returned.
 
 
 #### Example 1:
-> Input: `str = "42"`
-> 
-> Output: `42`
-
+```plaintext
+Input: `str = "42"`
+Output: `42`
+```
 #### Example 2:
-> Input: `str = "   -42"`
-> 
-> Output: `-42`
-
+```plaintext
+Input: `str = "   -42"`
+Output: `-42`
+```
 #### Example 3:
-> Input: `str = "4193 with words"`
-> 
-> Output: `4193`
-
+```plaintext
+Input: `str = "4193 with words"`
+Output: `4193`
+```
 #### Example 4:
-> Input: `str = "words and 987"`
-> 
-> Output: `0`
-
+```plaintext
+Input: `str = "words and 987"`
+Output: `0`
+```
 #### Example 5:
-> Input: `str = "-91283472332"`
-> 
-> Output: `-2147483648` (Explanation: The number "-91283472332" is out of the range of a 32-bit signed integer. Thefore INT_MIN (`-2^31`) is returned.)
-
+```plaintext
+Input: `str = "-91283472332"`
+Output: `-2147483648` (Explanation: The number "-91283472332" is out of the range of a 32-bit signed integer. Thefore INT_MIN (`-2^31`) is returned.)
+```
 ## Constraints:
 
 - `0 <= str.length <= 200`
