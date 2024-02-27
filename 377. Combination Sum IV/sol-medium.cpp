@@ -17,7 +17,8 @@ class Solution {
 public:
     int combinationSum4(vector<int>& nums, int target) {
       int res = 0;
-      unordered_map<int, int> m; // {target, combination}
+      if(target == 0) return 1;
+      if(m.find(target)!=m.end()) return m[target];
       
       for(int i=0; i<nums.size(); i++){
         if(target >= nums[i])
@@ -26,4 +27,6 @@ public:
       m[target] = res; // update 'target' number of combination
       return res;
     }
+private:
+    unordered_map<int, int> m; // {target, combination}
 };
