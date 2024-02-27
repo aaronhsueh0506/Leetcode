@@ -3,26 +3,27 @@
 Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
 
 #### Example 1:
-> Input: root = [3,9,20,null,null,15,7]
->
-> Output: [[3],[9,20],[15,7]]
+``` plaintext
+Input: root = [3,9,20,null,null,15,7]
+Output: [[3],[9,20],[15,7]]
 
-> Explanation: The binary tree's level order traversal is shown in the output.
+Explanation: The binary tree's level order traversal is shown in the output.
+```
 
 #### Example 2:
-> Input: root = [1]
-> 
-> Output: [[1]]
+``` plaintext
+Input: root = [1]
+Output: [[1]]
 
-> Explanation: The binary tree has only one node, so its level order traversal is simply [[1]].
-
+Explanation: The binary tree has only one node, so its level order traversal is simply [[1]].
+```
 #### Example 3:
-> Input: root = []
->
-> Output: []
+``` plaintext
+Input: root = []
+Output: []
 
-> Explanation: The binary tree is empty, so its level order traversal is an empty list.
-
+Explanation: The binary tree is empty, so its level order traversal is an empty list.
+```
 ## Constraints
 
 - The number of nodes in the tree is in the range `[0, 2000]`.
