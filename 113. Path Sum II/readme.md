@@ -7,27 +7,26 @@ A **root-to-leaf path** is a path that starts at the root and ends at any leaf. 
 ### Examples
 
 #### Example 1:
-> Input: root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
->
-> Output: [[5,4,11,2],[5,8,4,5]]
->
-> Explanation: There are two paths whose sum equals targetSum:
->
-> 5 + 4 + 11 + 2 = 22
->
-> 5 + 8 + 4 + 5 = 22
-
+```plaintext
+Input: root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
+Output: [[5,4,11,2],[5,8,4,5]]
+Explanation: There are two paths whose sum equals targetSum:
+5 + 4 + 11 + 2 = 22
+5 + 8 + 4 + 5 = 22
+```
 ![Example 1](https://assets.leetcode.com/uploads/2021/01/18/pathsumii1.jpg)
 
 #### Example 2:
-> Input: root = [1,2,3], targetSum = 5
->
-> Output: []
+```plaintext
+Input: root = [1,2,3], targetSum = 5
+Output: []
+```
 
 #### Example 3:
-> Input: root = [1,2], targetSum = 0
->
-> Output: []
+```plaintext
+Input: root = [1,2], targetSum = 0
+Output: []
+```
 
 ## Constraints
 
