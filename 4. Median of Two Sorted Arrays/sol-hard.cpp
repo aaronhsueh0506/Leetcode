@@ -17,10 +17,10 @@ public:
         // binary search will stop at nums1[m1] >= nums2[m2-1] 
         
         int m1 = left, m2 = k - left;
-        int c1 = max(m1<=0? INT_MIN : nums[m1-1], m2<=0? INT_MIN: nums[m2-1]);
+        int c1 = max(m1==0? INT_MIN : nums[m1-1], m2==0? INT_MIN: nums[m2-1]);
         if( (n1+n2) % 2 ) return c1;
 
-        int c2 = min(m1>=n1 ? INT_MAX: nums[m1], m2>=n2? INT_MAX: nums[m2]);
+        int c2 = min(m1==n1 ? INT_MAX: nums[m1], m2==n2? INT_MAX: nums[m2]);
         return (c1+c2)/2;
     }
 };
