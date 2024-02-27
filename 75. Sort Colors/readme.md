@@ -7,25 +7,25 @@ Here, we will use the integers `0`, `1`, and `2` to represent the color red, whi
 You must solve this problem without using the library's sort function.
 
 #### Example 1:
-> Input: nums = [2,0,2,1,1,0]
->
-> Output: [0,0,1,1,2,2]
-
+```plaintext
+Input: nums = [2,0,2,1,1,0]
+Output: [0,0,1,1,2,2]
+```
 #### Example 2:
-> Input: nums = [2,0,1]
->
-> Output: [0,1,2]
-
+```plaintext
+Input: nums = [2,0,1]
+Output: [0,1,2]
+```
 #### Example 3:
-> Input: nums = [0]
->
-> Output: [0]
-
+```plaintext
+Input: nums = [0]
+Output: [0]
+```
 #### Example 4:
-> Input: nums = [1]
->
-> Output: [1]
-
+```plaintext
+Input: nums = [1]
+Output: [1]
+```
 ## Constraints
 
 - `n == nums.length`
