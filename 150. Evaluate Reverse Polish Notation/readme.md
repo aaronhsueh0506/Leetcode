@@ -10,40 +10,30 @@ Valid operators are `+`, `-`, `*`, and `/`. Each operand may be an integer or an
 - The given RPN expression is always valid. That means the expression would always evaluate to a result, and there won't be any division by zero operation.
 
 #### Example 1:
-> Input: tokens = ["2","1","+","3","*"]
->
-> Output: 9
->
-> Explanation: ((2 + 1) * 3) = 9
-
+```plaintext
+Input: tokens = ["2","1","+","3","*"]
+Output: 9
+Explanation: ((2 + 1) * 3) = 9
+```
 #### Example 2:
-> Input: tokens = ["4","13","5","/","+"]
->
-> Output: 6
->
-> Explanation: (4 + (13 / 5)) = 6
-
+```plaintext
+Input: tokens = ["4","13","5","/","+"]
+Output: 6
+Explanation: (4 + (13 / 5)) = 6
+```
 #### Example 3:
-> Input: tokens = ["10","6","9","3","+","-11","","/","","17","+","5","+"]
->
-> Output: 22
->
-> Explanation:
->
-> ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
->
-> = ((10 * (6 / (12 * -11))) + 17) + 5
->
-> = ((10 * (6 / -132)) + 17) + 5
->
-> = ((10 * 0) + 17) + 5
->
-> = (0 + 17) + 5
->
-> = 17 + 5
->
-> = 22
-
+```plaintext
+Input: tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"]
+Output: 22
+Explanation:
+((10 * (6 / ((9 + 3) * -11))) + 17) + 5
+= ((10 * (6 / (12 * -11))) + 17) + 5
+= ((10 * (6 / -132)) + 17) + 5
+= ((10 * 0) + 17) + 5
+= (0 + 17) + 5
+= 17 + 5
+= 22
+```
 ## Constraints
 
 - `1 <= tokens.length <= 10^4`
