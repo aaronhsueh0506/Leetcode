@@ -5,20 +5,18 @@ There are a total of `numCourses` courses you have to take, labeled from `0` to 
 Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses?
 
 #### Example 1:
-> Input: numCourses = 2, prerequisites = [[1,0]]
-> 
-> Output: true
-> 
-> Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible.
-
+```plaintext
+Input: numCourses = 2, prerequisites = [[1,0]]
+Output: true
+Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible.
+```
 #### Example 2:
-> Input: numCourses = 2, prerequisites = [[1,0],[0,1]]
-> 
-> Output: false
-> 
-> Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. Hence, it is not possible.
-
-## Constraints:
+```plaintext
+Input: numCourses = 2, prerequisites = [[1,0],[0,1]]
+Output: false
+Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. Hence, it is not possible.
+```
+## Constraints
 
 - `1 <= numCourses <= 10^5`
 - `0 <= prerequisites.length <= 5000`
