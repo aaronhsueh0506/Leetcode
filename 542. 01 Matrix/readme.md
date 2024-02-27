@@ -5,51 +5,35 @@ Given an `m x n` binary matrix `mat`, return *the distance of the nearest `0` fo
 The distance between two adjacent cells is `1`.
 
 #### Example 1:
-> Input: mat = [
-> 
-> [0,0,0],
-> 
-> [0,1,0],
-> 
-> > 
-> [0,0,0]
+```plaintext
+Input: mat = [
+[0,0,0],
+[0,1,0],
+[0,0,0]
 ]
-> 
-> Output: [
-> 
-> [0,0,0],
-> 
-> [0,1,0],
-> 
-> [0,0,0]
-> 
-> ]
+Output: [
+[0,0,0],
+[0,1,0],
+[0,0,0]
+]
 
-> Explanation: The nearest `0` for every cell is itself.
-
+Explanation: The nearest `0` for every cell is itself.
+```
 #### Example 2:
-> Input: mat = [
-> 
-> [0,0,0],
-> 
-> [0,1,0],
-> 
-> [1,1,1]
-> 
-> ]
-> 
-> Output: [
-> 
-> [0,0,0],
-> 
-> [0,1,0],
-> 
-> [1,2,1]
-> 
-> ]
+```plaintext
+Input: mat = [
+[0,0,0],
+[0,1,0],
+[1,1,1]
+]
+Output: [
+[0,0,0],
+[0,1,0],
+[1,2,1]
+]
 
-> Explanation: The nearest `0` for each cell are as shown in the output.
-
+Explanation: The nearest `0` for each cell are as shown in the output.
+```
 ### Constraints
 
 - `m == mat.length`
