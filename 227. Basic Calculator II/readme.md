@@ -9,24 +9,21 @@ You may assume that the given expression is always valid. All intermediate resul
 **Note:** You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as `eval()`.
 
 #### Example 1:
-
-> Input: s = "3+2*2"
-> 
-> Output: 7
-
+```plaintext\n
+Input: s = "3+2*2"
+Output: 7
+```
 #### Example 2:
-
-> Input: s = " 3/2 "
-> 
-> Output: 1
-
+```plaintext\n
+Input: s = " 3/2 "
+Output: 1
+```
 #### Example 3:
-
-> Input: s = " 3+5 / 2 "
-> 
-> Output: 5
-
-## Constraints:
+```plaintext\n
+Input: s = " 3+5 / 2 "
+Output: 5
+```
+## Constraints
 
 - `1 <= s.length <= 3 * 10^5`
 - `s` consists of integers and operators `('+', '-', '*', '/')` separated by some number of spaces.
@@ -38,7 +35,7 @@ You may assume that the given expression is always valid. All intermediate resul
 1. while meet +,-,*,/ or last one number need finish previous calculate
 2. if meet +,- can push answer directly
 rule:
-a op1 b op2 c -> 0 + a op1 b op2 c
+a op1 b op2 c -0 + a op1 b op2 c
      - meet op1: 0 + a
      - meet op2: 0 + a op1 b
      - meet c : 0 + a op1 b op2 c
