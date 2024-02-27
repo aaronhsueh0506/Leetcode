@@ -33,7 +33,9 @@ The stack becomes [5,7].
 ```
 
 ## Constraints:
-
+- '0' <= val <= ' $10^9$ '
+- At most '2 * $10^4$' calls will be made to push and pop.
+- It is guaranteed that there will be at least one element in the stack before calling pop.
 
 ## Concept
 1. use two hash table, one record val-times, second record times-vecotr of val
