@@ -27,7 +27,6 @@ public:
         n = board[0].size();
 
         vector<string> res;
-        vector<vector<bool>> visited(m, vector<bool>(n));
         Trie T;
         for(string &word: words) T.insert(word);
 
@@ -35,27 +34,28 @@ public:
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
                 if(T.root->child[board[i][j] - 'a'])
-                    DFS(board, T.root->child[board[i][j] - 'a'], i, j, visited, res);
+                    DFS(board, T.root->child[board[i][j] - 'a'], i, j, res);
             }
         }
         
         return res;
     }
 
-    void DFS(vector<vector<char>>& board, TrieNode* p, int i, int j, vector<vector<bool>>& visited, vector<string>& res){
+    void DFS(vector<vector<char>>& board, TrieNode* p, int i, int j, vector<string>& res){
         if(!p->str.empty()){
             res.push_back(p->str);
             p->str.clear();
         }
 
-        visited[i][j] = true;
+        char cur = board[i][j];
+        board[i][j] = '#';
         for(auto dir: dirs){
             int x = i + dir[0], y = j + dir[1];
-            if(x>=0 && y>=0 && x<m && y<n && !visited[x][y] && p->child[board[x][y]-'a']){
-                DFS(board, p->child[board[x][y]-'a'], x, y, visited, res);
+            if(x>=0 && y>=0 && x<m && y<n && board[x][y]!='#' && p->child[board[x][y]-'a']){
+                DFS(board, p->child[board[x][y]-'a'], x, y, res);
             }
         }
-        visited[i][j] = false;
+        board[i][j] = cur;
     }
 
 private:
