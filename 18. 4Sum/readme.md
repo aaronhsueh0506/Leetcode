@@ -26,5 +26,5 @@ Output: [[2,2,2,2]]
 - `-10^9 <= target <= 10^9`
 
 ## Concept
-1. 2 for-loop and 2 pointer
+1. 2 for-loop and binary search
 2. skip if val same as previois one
