@@ -1,5 +1,6 @@
 // Trie 
 // time: O(sum(l) + 4^max(l)), space: O(sum(l) + l)
+// O(sum(l)) for create Trie and O(4^max(l)) for Trie have 4 node at most.
 class Solution {
 public:
     struct TrieNode{
