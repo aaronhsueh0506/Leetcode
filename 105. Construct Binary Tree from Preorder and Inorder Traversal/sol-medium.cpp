@@ -6,7 +6,8 @@ public:
 
     TreeNode* build(vector<int>& preorder, vector<int>& inorder, int pleft, int pright, int ileft, int iright){
       if(pleft > pright || ileft > iright) return nullptr;
-      for(int i=ileft; i<iright; i++){
+      int i;
+      for(i=ileft; i<iright; i++){
         if(preorder[pleft] == inorder[i]) break;
       }
 
