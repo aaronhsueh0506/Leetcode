@@ -27,15 +27,15 @@ The optimal path with no stops from city 0 to 2 is marked in red and has cost 50
 
 ## Constraints
 
-- 1 <= n <= 100
-- 0 <= flights.length <= (n * (n - 1) / 2)
-- flights[i].length == 3
-- 0 <= fromi, toi < n
-- fromi != toi
-- 1 <= pricei <= 104
+- `1 <= n <= 100`
+- `0 <= flights.length <= (n * (n - 1) / 2)`
+- `flights[i].length == 3`
+- `0 <= from_i, to_i < n`
+- `from_i != to_i`
+- `1 <= price_i <= 104`
 - There will not be any multiple flights between two cities.
-- 0 <= src, dst, k < n
-- src != dst
+- `0 <= src, dst, k < n`
+- `src != dst`
 
 ## Concept
 1. The shortest path problem is solved using Dijkstra's algorithm.
