@@ -12,7 +12,7 @@ The `'.'` character indicates empty cells.
 
 #### Example 1:
 
-![Example 1](https://assets.leetcode.com/uploads/2020/09/11/sudoku.jpg)
+![Example 1](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
 ```plaintext
 Input: board =
 [["5","3",".",".","7",".",".",".","."]
