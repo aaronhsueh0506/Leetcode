@@ -10,10 +10,10 @@ public:
         for(int i=0; i<s.size(); i++){
             if(count[s[i]-'a']<k){
                 flag = false;
-                if(i>left) res = max(res, longestSubstring(s.substr(left, i-1),k));
+                if(i>left) res = max(res, longestSubstring(s.substr(left, i-left),k));
                 left = i+1;
             }
         }
-        return flag? s.size() : max(res, longestSubstring(s.substr(start, s.size()-n),k));
+        return flag? s.size() : max(res, longestSubstring(s.substr(left, s.size()-left),k));
     }
 };
