@@ -37,6 +37,6 @@ Explanation: No course can be studied because they are prerequisites of each oth
 - All the pairs `[prevCoursei, nextCoursei]` are unique.
 
 ## Concept
-1. Create a graph represented as {prev, vector{next}}, and use an indeg array to store the number of prerequisites for each class.
-2. Start with classes whose indeg is zero (no prerequisites), and decrement the indeg for the next class. If indeg becomes zero, it means all prerequisite classes have been finished.
-3. Count the number of classes processed and check if it equals n to determine if all classes can be finished.
+1. Create a `graph` represented as `{prev, vector{next}}`, and use an `indeg` array to store the number of prerequisites for each class.
+2. Start with classes whose `indeg` is `0` (no prerequisites), and decrement the indeg for the next class. If indeg becomes `0`, it means all prerequisite classes have been finished.
+3. Count the number of classes `cnt` processed and check if it equals `n` to determine if all classes can be finished.
