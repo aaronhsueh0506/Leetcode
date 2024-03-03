@@ -28,9 +28,11 @@ Explanation: The triplet (3, 4, 5) is valid because nums[3] == 0 < nums[4] == 4 
 
 ## Concept
 Solution 1:
+
 Find the maximum number to the right of nums[i], and then start from the left side. If minLeft < nums[i] < maxRight[i], return true.
 
 Solution 2:
+
 Set smallest and smaller to INT_MAX.
 - If a number is less than smallest, update smallest.
 - If a number is less than smaller but greater than smallest, update smaller.
