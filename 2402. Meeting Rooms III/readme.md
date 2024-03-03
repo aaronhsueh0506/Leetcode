@@ -36,6 +36,6 @@ Explanation: Only one meeting room is needed since the meetings don't overlap.
 
 ## Concept
 1. Maintain two min-heaps: one for the indices of available rooms, and another for the end times and indices of busy rooms.
-2. If a new meeting's starting time is greater than or equal to the end time of a busy room, it means the room becomes available.
+2. If a new meeting's starting time is greater than or equal to (not including `b`) the end time of a busy room, it means the room becomes available.
 3. Assign the meeting to the room with the lowest index. If there are no available rooms, use the first room to become free from the busy rooms heap, then add the meeting duration to this room's end time.
-4. Maintain a vector count to record each meeting use which room.
+4. Maintain a vector `count` to record each meeting use which room.
