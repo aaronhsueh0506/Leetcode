@@ -9,10 +9,11 @@ public:
     
     int pickIndex() {
         int x = rand() % sum.back();
+        x += 1;
         int left = 0, right = sum.size() - 1;
         while(right>left){
             int mid = left + (right-left) /2;
-            if(sum[mid] <= x) left = mid + 1;
+            if(sum[mid] < x) left = mid + 1;
             else right = mid;
         }
         return right;
