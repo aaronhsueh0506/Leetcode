@@ -45,8 +45,8 @@ So, the maximum number of bombs we can detonate is 3.
 ## Concept
 Solution 1: O(n^3)
 1. First, create a graph indicating which bombs each bomb can connect to.
-2. Start from each bomb and iterate using graph[cur].
+2. Use BFS and start from each bomb and iterate using graph[cur].
    
 Solution 2: O(n^2 log n)
 1. Sort the bombs by their radius.
-2. Use a visited array and start from the bomb with the largest radius.
+2. Use BFS with a visited array and start from the bomb with the largest radius.
