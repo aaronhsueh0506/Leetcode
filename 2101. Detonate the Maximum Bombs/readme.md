@@ -6,7 +6,7 @@ Return *the maximum number of bombs that can be detonated*.
 
 #### Example 1:
 
-![Example 1](https://assets.leetcode.com/uploads/2021/11/22/example1drawio.png)
+![Example 1](https://assets.leetcode.com/uploads/2021/11/06/desmos-eg-3.png)
 ```plaintext
 Input: bombs = [[2,1,3],[6,1,4]]
 Output: 2
@@ -18,7 +18,7 @@ So, the maximum bombs we can detonate is 2.
 
 #### Example 2:
 
-![Example 2](https://assets.leetcode.com/uploads/2021/11/22/example2drawio.png)
+![Example 2](https://assets.leetcode.com/uploads/2021/11/06/desmos-eg-2.png)
 ```plaintext
 Input: bombs = [[1,1,5],[10,10,5]]
 Output: 1
@@ -27,7 +27,7 @@ Explanation: Detonating either bomb will not detonate the other bomb, so the max
 
 #### Example 3:
 
-![Example 3](https://assets.leetcode.com/uploads/2021/11/22/example3drawio.png)
+![Example 3](https://assets.leetcode.com/uploads/2021/11/07/desmos-eg1.png)
 ```plaintext
 Input: bombs = [[2,2,2],[3,3,3],[2,4,2]]
 Output: 3
