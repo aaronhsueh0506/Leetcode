@@ -20,4 +20,4 @@ Output: 1
 
 ## Concept
 1. Sort the meeting by start time
-2. Use a min-heap save the end time of meeting, if new meeting start time is greater than is first in heap, pop this meeting.
+2. Use a min-heap save the end time of meeting, if new meeting start time is greater than is first in heap, pop this meeting (new meeting use the room of pop meeting).
