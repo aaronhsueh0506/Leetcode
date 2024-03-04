@@ -35,3 +35,41 @@ public:
         }
     }
 };
+
+// combination
+// extra handle numbers of k same as the limit
+// res only calculation greater than limit
+// res* (lim ^ k) for k numbers.
+class Solution {
+public:
+    int beauty = 0;
+    long res = 1;
+    long M = 1e9+7;
+    int countKSubsequencesWithMaxBeauty(string s, int k) {
+        vector<int> count(26);
+        for(auto c: s) count[c-'a']++;
+
+        sort(count.begin(), count.end(), greater<int>()); // large to small
+        if(count.size()<k) return 0;
+        
+        int limit = count[k-1];
+        int cnt = 0;
+        for(int i=0; i<26; i++){
+            if(count[i]==limit) cnt++;
+            else if(count[i]>limit){
+                res = res * count[i] % M;
+                k--;
+            }
+        }
+
+        int comb = 1; // combination
+
+        for(int i=0;i<k;i++){
+            res = res * limit % M;
+            comb = comb * (cnt - i) / (i + 1); 
+        }
+
+        return res*comb%M;
+    }
+};
+
