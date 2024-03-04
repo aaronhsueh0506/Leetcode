@@ -34,10 +34,10 @@ rangeModule.queryRange(16, 17); // return True, (The number 16 in [16, 17) is st
 - At most `10^4` calls will be made to `addRange`, `queryRange`, and `removeRange`.
 
 ## Concept
-Create a vector to store pairs of (left, right) where left <= x < right.
-- addRange: To avoid overlap, add the range directly to the result if left < v[i].first and right > v[i].second.
-- queryRange: To check if left <= x < right, ensure v[i].first >= left and v[i].second <= right.
-- removeRange:
-    * If left <= v[i].first and right >= v[i].second, directly add it to the result (note that left is represented by [, and v[i].second is represented by )).
-    * Create a temporary vector t to store the newly split pairs, which may originate from two different pairs.
+Create a vector to store pairs of `[left, right)` where `left <= x < right`.
+- `addRange`: To avoid overlap, add the range directly to the result if `left < v[i].first` and `right > v[i].second`.
+- `queryRange`: To check if `left <= x < right`, ensure `v[i].first >= left` and `v[i].second <= right`.
+- `removeRange`:
+    * If `left <= v[i].first` and `right >= v[i].second`, directly add it to the result (note that `left` is represented by `[`, and `v[i].second` is represented by `)`).
+    * Create a temporary vector `t` to store the newly split pairs, which may originate from two different pairs.
      
