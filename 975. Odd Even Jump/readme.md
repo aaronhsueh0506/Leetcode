@@ -56,5 +56,5 @@ Explanation: We can reach the end from starting indices 1, 2, and 4.
 
 ## Concept
 1. To handle `>=` and `<=`, you can use `upper_bound` combined with `prev` (which together achieve <=) or `lower_bound` (which directly achieves `>=`) with a `map`.
-2. Start from the end and update `dp[i][0] = dp[o->second][1]`, `dp[i][1] = dp[prev(e)->second][0]`.
-3. If `dp[i][0]` is true, it means you can start from this index.
+2. Start from the end and update `dp[i][0] = dp[o->second][1]`, `dp[i][1] = dp[prev(e)->second][0]`. (dp[i][0] means start from index i and odd-jump, dp[o->second][1] is next_value go even jump can archive to end or not)
+3. If `dp[i][0]` is true, it means you can start from this index. `dp[i][0]` signifies whether starting from index `i` and making an odd jump, one can eventually reach the end by making subsequent even jumps, as determined by `dp[o->second][1]`, which represents the feasibility of reaching the end from the next value through an even jump.
