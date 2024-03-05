@@ -12,14 +12,15 @@ public:
             if(in==out) res = max(res, std::accumulate(in.begin(), in.end(), 0));
         }
         else{
-            backtrace(requests, in, out, res, cur+1);
-
+            // including cur
             ++out[requests[cur][0]];
             ++in[requests[cur][1]];
             backtrace(requests, in, out, res, cur+1);
 
+            // not including cur
             --out[requests[cur][0]];
             --in[requests[cur][1]];
+            backtrace(requests, in, out, res, cur+1);
         }
     }
 };
