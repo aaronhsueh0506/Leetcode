@@ -37,5 +37,5 @@ Explanation: Since there are no semi-decreasing subarrays in the given array, th
 - `-10^9 <= nums[i] <= 10^9`
 
 ## Concept
-1. Since we need to find instances where nums[left] > nums[right], we use a stack to record elements where the next element is greater than the current one, for the left boundary.
-2. Starting from the right, we compare with st.top(). If nums[st.top()] > nums[right], we can update the length and perform st.pop() to move the left boundary.
+1. Since we need to find instances where `nums[left] > nums[right]`, we use a stack to record elements where the next element is greater than the current one, for the left boundary.
+2. Starting from the right, we compare with `st.top()`. If `nums[st.top()] > nums[right]`, we can update the length and perform `st.pop()` to move the left boundary.
