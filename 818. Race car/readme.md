@@ -36,9 +36,9 @@ Your position goes from 0 --> 1 --> 3 --> 7 --> 7 --> 6.
 
 ## Concept
 Solution 1: BFS
-  - At each step, choose 'A' (accelerate) or 'R' (reverse) to get a new speed and position until the target is found.
+  - At each step, choose `'A'` (accelerate) or `'R'` (reverse) to get a new speed and position until the `target` is found.
 Solution 2: DP
   - For each DP[i], record the minimum steps starting from i.
-  - Go forward j (accelerate cnt1 times) and go backward k (reverse cnt2 times), then add dp[i - (j-k)] for the residual steps.
-  - Go forward j (accelerate cnt1 times) and add dp[j-i] for cases where the target is overshot.
-  - Go forward j (accelerate cnt1 times) and directly find the target if i==j.
+  - Go forward `j` (accelerate `cnt1` times) and go backward `k` (reverse `cnt2` times), then add `dp[i - (j-k)]` for the residual steps.
+  - Go forward `j` (accelerate `cnt1` times) and add `dp[j-i]` for cases where the `target` is overshot.
+  - Go forward `j` (accelerate `cnt1` times) and directly find the target if `i==j`.
