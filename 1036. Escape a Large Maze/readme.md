@@ -36,6 +36,6 @@ Explanation: Because there are no blocked cells, it is possible to reach the tar
 - It is guaranteed that `source` and `target` are not blocked.
 
 ## Concept
-1. Because maxiumum of maze is 10^6, go all will TLE.
-2. Inspire from block.length<=200, the maximum area can block is a triangle of 200, so is 20000 points.
-3. If we can move over 20000 points, directly return true. But need start from source and target to confirm
+1. Because the maximum size of the maze is 10^6, attempting to traverse it entirely will result in a Time Limit Exceeded (TLE) error.
+Inspired by the fact that block.length is less than or equal to 200, the maximum area that can be blocked is equivalent to a triangle with 200 points on each side, which amounts to 20,000 points.
+If it's possible to move over 20,000 points, we can directly return true. However, we need to start from both the source and the target to confirm this.
