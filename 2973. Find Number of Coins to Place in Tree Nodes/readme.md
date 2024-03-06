@@ -1,4 +1,4 @@
-![image](https://github.com/aaronhsueh0506/Leetcode/assets/58929071/7754724f-4df5-4b99-a4a0-9bbe26f93fcf)![image](https://github.com/aaronhsueh0506/Leetcode/assets/58929071/5950f35e-ccc4-4eaf-9cf8-166ee9090fb2)## Problem Decrsiption
+## Problem Decrsiption
 
 You are given an undirected tree with n nodes labeled from `0` to `n - 1`, and rooted at node `0`. You are given a 2D integer array `edges` of length `n - 1`, where `edges[i] = [ai, bi]` indicates that there is an edge between nodes `ai` and `bi` in the tree.
 
