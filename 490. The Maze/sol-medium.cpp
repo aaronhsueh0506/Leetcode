@@ -1,4 +1,4 @@
-// for each cell, the complexity is max(m,n)^4, so total is O(mn * max(m,n)^4)
+// for each cell, the complexity is 4, so total is O(mn * 4)
 // DFS
 class Solution {
 public:
