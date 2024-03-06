@@ -28,6 +28,6 @@ Explanation: The array is already in non-decreasing order. Therefore, we return 
 
 ## Concept
 Check from the right side, and if the current value (`cur`) is greater than the next, split `cur` into parts such that:
-- \(P_1 + P_2 + P_3 + \ldots + P_k = \text{cur}\) and \(P_1 \leq P_2 \leq \ldots \leq P_k\).
-- To minimize the number of operations for `cur`, set the number of splits `k` to be \(\text{cur} / \text{next}\). If \(\text{cur} \% \text{next} == 1\), then increment `k` by 1.
-- To maximize \(P_1\), set \(P_1\) to be the integer part of \(\text{cur} / k\).
+- $\(P_1 + P_2 + P_3 + \ldots + P_k = \text{cur}\)$ and $\(P_1 \leq P_2 \leq \ldots \leq P_k\).$
+- To minimize the number of operations for `cur`, set the number of splits `k` to be `cur/next`. If `cur % next == 1`, then increment `k` by `1`.
+- To maximize $P_1$, set $P_1$ to be the integer part of `cur/k`.
