@@ -30,4 +30,5 @@ Output: [0,0]
 
 ## Concept
 Solution 1. Binary search and insert from right side. O(nlogn) ~ O(n^2)
+
 Solution 2. Merge sort. O(nlogn)
