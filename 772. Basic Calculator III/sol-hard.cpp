@@ -18,7 +18,7 @@ public:
 
                     if(cnt==0) break;
                 }
-                num = calculate(s.substr(j+1, i-j+1));
+                num = calculate(s.substr(j+1, i-j-1)); // from j+1 ~ i-1, len becomes to (i-1) - (j+1) + 1 = i - j - 1
             }
             
             if(s[i]=='+' || s[i]=='-' || s[i]=='*' || s[i]=='/' || i==n-1){
