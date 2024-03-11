@@ -8,34 +8,29 @@ public:
         string str;
     };
 
-    struct Trie{
-        TrieNode *root;
-        Trie(): root(new TrieNode()) {}
-
-        void insert(string word){
-            TrieNode *p = root;
-            for(auto &a:word){
-                int i = a - 'a';
-                if(!p->child[i]) p->child[i] = new TrieNode();
-                p = p->child[i];
-            }
-            p->str = word;
+    void insert(string word){
+        TrieNode *p = root;
+        for(auto &a:word){
+            int i = a - 'a';
+            if(!p->child[i]) p->child[i] = new TrieNode();
+            p = p->child[i];
         }
-    };
+        p->str = word;
+    }
 
     vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
         m = board.size();
         n = board[0].size();
 
         vector<string> res;
-        Trie T;
-        for(string &word: words) T.insert(word);
+        root = new TrieNode();
+        for(string &word: words) insert(word);
 
         
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
-                if(T.root->child[board[i][j] - 'a'])
-                    DFS(board, T.root->child[board[i][j] - 'a'], i, j, res);
+                if(root->child[board[i][j] - 'a'])
+                    DFS(board, root->child[board[i][j] - 'a'], i, j, res);
             }
         }
         
@@ -50,7 +45,7 @@ public:
 
         char cur = board[i][j];
         board[i][j] = '#';
-        for(auto dir: dirs){
+        for(auto& dir: dirs){
             int x = i + dir[0], y = j + dir[1];
             if(x>=0 && y>=0 && x<m && y<n && board[x][y]!='#' && p->child[board[x][y]-'a']){
                 DFS(board, p->child[board[x][y]-'a'], x, y, res);
@@ -62,6 +57,7 @@ public:
 private:
     int m, n;
     vector<vector<int>> dirs{{-1,0},{0,-1},{1,0},{0,1}};
+    TrieNode* root;
 };
 
 // DFS, TLE ( for test case 62, same prefix)
