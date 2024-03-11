@@ -18,9 +18,9 @@ public:
 
       while(!q.empty()){
         int s = q.size();
+        cnt += s;
         while(s--){
           int cur = q.front(); q.pop();
-          cnt++; 
           for(int next: graph[cur]){
             if(--indeg[next]==0) q.push(next); 
           }
