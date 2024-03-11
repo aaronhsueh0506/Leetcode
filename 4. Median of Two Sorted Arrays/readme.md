@@ -27,7 +27,6 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 ## Concept
 1. Make sure nums1.size() < nums2.size().
 2. Perform a binary search in nums1:
-```plaintext
     - The condition is nums1[m1] < nums2[m2-1]; if true, left = mid + 1 because we want to find the index from 0 to m1-1 in nums1.
 3. If the length of nums1 + nums2 is odd, return the minimum of nums1[m1] and nums2[m2].
 4. If the length of nums1 + nums2 is even, return the average of max(nums1[m1-1], nums2[m2-1]) and min(nums1[m1], nums2[m2]).
