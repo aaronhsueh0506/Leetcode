@@ -1,4 +1,4 @@
-![image](https://github.com/aaronhsueh0506/Leetcode/assets/58929071/d22725e0-5a8c-4725-ba77-74fd19048fc6)![image](https://github.com/aaronhsueh0506/Leetcode/assets/58929071/72f40319-cb7d-4fc5-886f-98b10fd10642)## Problem Decsription
+## Problem Decsription
 
 Given the `root` of a binary tree, return **the vertical order traversal** of its nodes' values. (i.e., from top to bottom, column by column).
 
@@ -13,7 +13,7 @@ Input: root = [3,9,20,null,null,15,7]
 Output: [[9],[3,15],[20],[7]]
 ```
 #### Example 2:
-![Ex2](https://assets.leetcode.com/uploads/2021/01/28/vtreeㄉ.jpg)
+![Ex2](https://assets.leetcode.com/uploads/2021/01/28/vtree2.jpg)
 ```plaintext
 Input: root = [3,9,8,4,0,1,7]
 Output: [[4],[9],[3,0,1],[8],[7]]
