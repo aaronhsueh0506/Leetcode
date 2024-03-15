@@ -39,5 +39,5 @@ Explanation: (1, 2, 3) occured one time in the array so we return 1.
 
 ## Concept
 1. Use a hash table to count the occurrences of each number.
-2. If the sum equals the target, calculate the product of occurrences. However, for duplicate values, compute the combination $$ C^m_n = \frac{m!}{(m-n)!n!} $$
+2. If the sum equals the target, calculate the product of occurrences. However, for duplicate values, compute the combination $C^m_n = \frac{m!}{(m-n)!n!}$
 
