@@ -18,9 +18,9 @@ public:
     }
 
     struct comp{
-      bool operater(){ pair<strint, int>& l1, pair<strint, int>& l2){
+      bool operater()(pair<string, int>& l1, pair<string, int>& l2){
         if(l1.second == l2.second) return l1.first > l2.first;
         return l1.second < l2.second;
       }
-    }
+    };
 };
