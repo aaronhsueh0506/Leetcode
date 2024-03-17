@@ -29,10 +29,10 @@ Output: 2
 ## Concept
 Solution 1: Brute force
 - Iterate over each character of the words and compare it to s starting from the previous index. If the character cannot be found, it means this word cannot match.
-- Hash table to record this word is fail or not. (provide same prefix)
+- Hash table to record this word is fail or not. (provide double counting for same prefix)
 
 Solution 2: Binary search
 
 - Record the index of each character in s.
 - Use upper_bound to find the next position of this character after the previous index. (Upper_bound for a vector is obtained using upper_bound(v.begin(), v.end(), val)).
-- Hash table to record this word and its splits are fail or not. (provide double counting)
+- Hash table to record this word is fail or not. (provide double counting for same prefix)
