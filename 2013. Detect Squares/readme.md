@@ -14,7 +14,7 @@ Implement the `DetectSquares` class:
  
 
 Example 1:
-![Ex]()
+![Ex](https://assets.leetcode.com/uploads/2021/09/01/image.png)
 ```plaintext
 Input
 ["DetectSquares", "add", "add", "add", "count", "count", "add", "count"]
