@@ -38,7 +38,7 @@ public:
 };
 
 // brute force
-// Time complexity is O(m * k * n) // n for length of s, m for number of words, and k for the longest word
+// Time complexity is O(m * (k + n)) // n for length of s, m for number of words, and k for the longest word
 // Spaec complexity is O(m)
 class Solution {
 public:
