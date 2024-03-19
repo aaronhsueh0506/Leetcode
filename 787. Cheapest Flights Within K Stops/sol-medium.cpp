@@ -3,7 +3,7 @@ public:
     int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
         vector<vector<pair<int,int>>> graph(n);
 
-        for(auto flight:flights){
+        for(auto& flight:flights){
             graph[flight[0]].push_back({flight[1], flight[2]});
         }
 
@@ -25,10 +25,10 @@ public:
                 auto [cost, u, stop] = q.top(); q.pop();
                 if(u == dst) return cost; 
                 if(stop == 0) continue;
-                for(auto a: graph[u]){
+                for(auto& a: graph[u]){
                     if(cost + a.second < dist[a.first][stop-1]){
-                        dist[u][stop-1] = cost + a.second;
-                        q.push({dist[u][stop-1], a.first, stop-1});
+                        dist[a.first][stop-1] = cost + a.second;
+                        q.push({dist[a.first][stop-1], a.first, stop-1});
                     }
                 }
             }
