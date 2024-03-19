@@ -7,13 +7,14 @@ Return the **number of pairs** of different nodes that are unreachable from each
  
 
 #### Example 1:
-![Ex]()
+![Ex](https://assets.leetcode.com/uploads/2022/05/05/tc-3.png)
 ```plaintext
 Input: n = 3, edges = [[0,1],[0,2],[1,2]]
 Output: 0
 Explanation: There are no pairs of nodes that are unreachable from each other. Therefore, we return 0.
 ```
 #### Example 2:
+![Ex2](https://assets.leetcode.com/uploads/2022/05/05/tc-2.png)
 ```plaintext
 Input: n = 7, edges = [[0,2],[0,5],[2,4],[1,6],[5,4]]
 Output: 14
