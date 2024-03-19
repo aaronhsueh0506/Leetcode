@@ -5,13 +5,13 @@ You have a graph of `n` nodes. You are given an integer `n` and an array `edges`
 Return the number of connected components in the graph.
 
 Example 1:
-
+![Ex1](https://assets.leetcode.com/uploads/2021/03/14/conn1-graph.jpg)
 ```plaintext
 Input: n = 5, edges = [[0,1],[1,2],[3,4]]
 Output: 2
 ```
 Example 2:
-
+![Ex2](https://assets.leetcode.com/uploads/2021/03/14/conn2-graph.jpg)
 ```plaintext
 Input: n = 5, edges = [[0,1],[1,2],[2,3],[3,4]]
 Output: 1
