@@ -20,16 +20,13 @@ public:
         dist[src][k+1] = 0;
 
         while(!q.empty()){
-            int s = q.size();
-            while(s--){
-                auto [cost, u, stop] = q.top(); q.pop();
-                if(u == dst) return cost; 
-                if(stop == 0) continue;
-                for(auto& a: graph[u]){
-                    if(cost + a.second < dist[a.first][stop-1]){
-                        dist[a.first][stop-1] = cost + a.second;
-                        q.push({dist[a.first][stop-1], a.first, stop-1});
-                    }
+            auto [cost, u, stop] = q.top(); q.pop();
+            if(u == dst) return cost; 
+            if(stop == 0) continue;
+            for(auto& a: graph[u]){
+                if(cost + a.second < dist[a.first][stop-1]){
+                    dist[a.first][stop-1] = cost + a.second;
+                    q.push({dist[a.first][stop-1], a.first, stop-1});
                 }
             }
         }
