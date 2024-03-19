@@ -16,14 +16,11 @@ public:
 
         vector<string> res;
         while(!q.empty()){
-            int s = q.size();
-            while(s--){
-                string t = q.front(); q.pop();
-                for(auto& r: graph[t]){ 
-                    if(--indeg[r]==0){
-                        q.push(r);
-                        res.push_back(r);
-                    }
+            string t = q.front(); q.pop();
+            for(auto& r: graph[t]){ 
+                if(--indeg[r]==0){
+                    q.push(r);
+                    res.push_back(r);
                 }
             }
         }
