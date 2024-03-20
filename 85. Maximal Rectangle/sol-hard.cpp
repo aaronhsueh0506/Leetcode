@@ -9,7 +9,7 @@ public:
                 if(j<n){
                     height[j] = matrix[i][j]=='1' ? height[j]+1 : 0;
                 }
-                while(!st.empty() && height[st.top()]>=height[j]){
+                while(!st.empty() && height[st.top()]>height[j]){
                     int cur = st.top(); st.pop();
                     res = max(res, height[cur] * (st.empty() ? j : (j - st.top() -1)));
                 }
