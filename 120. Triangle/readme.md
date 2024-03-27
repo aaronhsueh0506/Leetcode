@@ -25,3 +25,7 @@ Output: -10
 - `triangle[0].length == 1`
 - `triangle[i].length == triangle[i - 1].length + 1`
 - `-10^4 <= triangle[i][j] <= 10^4`
+
+## Concept
+1. BFS from top will be brute force
+2. DP from bottom can be O(n)
