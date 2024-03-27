@@ -16,5 +16,5 @@ Output: 99
 Constraints:
 
 - `1 <= nums.length <= 3 * 10^4`
-- `-23^1 <= nums[i] <= 23^1 - 1`
+- `-2^31 <= nums[i] <= 2^31 - 1`
 - Each element in `nums` appears exactly three times except for one element which appears **once**
