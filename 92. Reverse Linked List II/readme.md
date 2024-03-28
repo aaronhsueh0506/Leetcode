@@ -17,3 +17,6 @@ Output: [5]
 - `1 <= n <= 500`
 - `-500 <= Node.val <= 500`
 - `1 <= left <= right <= n`
+
+## Concept
+1. set pre, cur, next. And pre connect to next, next connect to pre->next, cur connect to next.
