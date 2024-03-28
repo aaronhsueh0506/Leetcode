@@ -19,4 +19,4 @@ Output: [5]
 - `1 <= left <= right <= n`
 
 ## Concept
-1. set pre, cur, next. And pre connect to next, next connect to pre->next, cur connect to next.
+1. set pre, cur, tmp. And tmp connect to pre->next (tmp->next = pre->next), pre connect to next(pre->next = next), cur connect to tmp (cur->next = tmp->next).
