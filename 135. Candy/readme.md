@@ -27,3 +27,7 @@ The third child gets 1 candy because it satisfies the above two conditions.
 - `n == ratings.length`
 - `1 <= n <= 2 * 10^4`
 - `0 <= ratings[i] <= 2 * 10^4`
+
+## Concept
+1. Scan from left to right and right to left if the current is greater than the previous one.
+2. The scan from right to left needs to check if the candy is different, using the maximum.
