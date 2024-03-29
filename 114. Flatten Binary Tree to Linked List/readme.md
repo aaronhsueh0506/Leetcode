@@ -25,3 +25,7 @@ Output: [0]
 
 - The number of nodes in the tree is in the range `[0, 2000]`.
 - `-100 <= Node.val <= 100`
+
+## Concept
+1. Go the left side and connect left to right.
+2. Go the last node of left side and connect to the first node of right side.
