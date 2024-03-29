@@ -26,7 +26,7 @@ Input: root = []
 Output: []
  ```
 
-Constraints:
+## Constraints
 
-The number of nodes in the tree is in the range [0, 6000].
--100 <= Node.val <= 100
+- The number of nodes in the tree is in the range `[0, 6000]`.
+- `-100 <= Node.val <= 100`
