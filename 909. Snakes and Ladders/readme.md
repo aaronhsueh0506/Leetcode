@@ -16,7 +16,7 @@ Return the least number of moves required to reach the square `n^2`. If it is no
  
 
 #### Example 1:
-![Ex]()
+![Ex](https://assets.leetcode.com/uploads/2018/09/23/snakes.png)
 ```plaintext
 Input: board = [[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,35,-1,-1,13,-1],[-1,-1,-1,-1,-1,-1],[-1,15,-1,-1,-1,-1]]
 Output: 4
