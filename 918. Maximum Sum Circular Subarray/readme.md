@@ -33,9 +33,13 @@ Explanation: Subarray [-2] has maximum sum -2.
 
 ## Concept
 Case 1: non-circular subarray
+
 Case 2: circular subarray
+
 Corner case: all negative
 
 Case 1 for compute the max to solve.
+
 Case 2 for coupute total sum minus min
+
 Corner case for max value
