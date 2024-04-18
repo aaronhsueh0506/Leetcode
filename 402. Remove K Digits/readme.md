@@ -27,6 +27,6 @@ Explanation: Remove all the digits from the number and it is left with nothing w
 - `num` does not have any leading zeros except for the zero itself.
 
 ## Concept
-1. Remove the large number from left.
+1. Remove the large number from left. (find the minimum prefix)
 2. If length too long, drop from right
 3. Avoid leading zeros.
