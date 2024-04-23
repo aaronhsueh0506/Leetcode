@@ -28,6 +28,7 @@ Explanation: We pay 4 to 0th worker, 13.33333 to 2nd and 3rd workers separately.
 - `1 <= quality[i], wage[i] <= 10^4`
 
 ## Concept
-1. Create a vector to record the wage-quality ratio and quality and sort
-2. Use a max-heap start from the lower ratio, and heap store the quality
-3. We need to satisfy the larger ratio (new), so update res with qsum * worker.first.
+1. Create a vector to record the wage-quality ratio and quality, then sort it.
+2. Use a max-heap starting from the lowest ratio; the heap will store the quality values.
+3. To satisfy the higher ratio (new), update the result with qsum * worker.first.
+4. While the ratio (worker.first) is fixed, attempt to find the minimum total quality sum. Even if worker.second is dropped from the heap, the ratio will not exceed previous values, thus the result will not be updated.
