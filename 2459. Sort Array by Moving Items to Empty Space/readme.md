@@ -49,4 +49,5 @@ It can be proven that 2 is the minimum number of operations needed.
 1. This problem requests only can move "0".
 2. Each path of swap is length-1 for usual case. If "0" not in path, need to move "0" in and out, so count will be length + 1.
 3. We set each path need to move "0" in, so count length + 1 for each path.
-4. Check nums[start]!=start, means "0" in one of path, so this path will get length - 1. 
+4. Check nums[start]!=start, means "0" in one of path, so this path will get length - 1.
+5. Change nums with (num - 1 + n) % n for 0 in last position.
